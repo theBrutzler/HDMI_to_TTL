@@ -31,7 +31,7 @@ jobs:
 
     - name: Generate Schematic PDF
       run: |
-        [[ -f TTL_to_HDMI.pdf ]] || kibot -c .github/workflows/kibot/schematic.kibot.yaml
+        [[ ! -f TTL_to_HDMI.pdf ]] || kibot -c .github/workflows/kibot/schematic.kibot.yaml
 
     - name: Create Pull Request for changes
       uses: peter-evans/create-pull-request@v4      
