@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="top" Register="64" Alu="34" Lut="37" T_Register="1061(64)" T_Alu="445(34)" T_Lut="1598(37)" T_Bsram="12(0)" T_Ssram="10(0)">
+ <SubModule name="u_mon" Register="552" Alu="152" Lut="400" T_Register="552(552)" T_Alu="152(152)" T_Lut="400(400)"/>
+ <SubModule name="u_console" Register="93" Alu="62" Lut="503" T_Register="156(93)" T_Alu="62(62)" T_Lut="590(503)">
+  <SubModule name="u_tx" Register="31" Lut="45" T_Register="31(31)" T_Lut="45(45)"/>
+  <SubModule name="u_rx" Register="32" Lut="42" T_Register="32(32)" T_Lut="42(42)"/>
+ </SubModule>
+ <SubModule name="u_pll_test"/>
+ <SubModule name="u_pll"/>
+ <SubModule name="u_div_5"/>
+ <SubModule name="u_reset_sync" Register="4" Alu="4" Lut="2" T_Register="4(4)" T_Alu="4(4)" T_Lut="2(2)"/>
+ <SubModule name="u_conv" Register="172" Alu="47" Lut="80" Bsram="12" Ssram="1" T_Register="172(172)" T_Alu="47(47)" T_Lut="80(80)" T_Bsram="12(12)" T_Ssram="1(1)"/>
+ <SubModule name="u_tp" Register="58" Alu="41" Lut="138" T_Register="58(58)" T_Alu="41(41)" T_Lut="138(138)"/>
+ <SubModule name="u_hdmi" Lut="1" T_Register="55(0)" T_Alu="105(0)" T_Lut="351(1)" T_Ssram="9(0)">
+  <SubModule name="u_tmds_b" Register="18" Alu="35" Lut="125" Ssram="3" T_Register="18(18)" T_Alu="35(35)" T_Lut="125(125)" T_Ssram="3(3)"/>
+  <SubModule name="u_tmds_g" Register="18" Alu="35" Lut="111" Ssram="3" T_Register="18(18)" T_Alu="35(35)" T_Lut="111(111)" T_Ssram="3(3)"/>
+  <SubModule name="u_tmds_r" Register="19" Alu="35" Lut="114" Ssram="3" T_Register="19(19)" T_Alu="35(35)" T_Lut="114(114)" T_Ssram="3(3)"/>
+ </SubModule>
+</Module>

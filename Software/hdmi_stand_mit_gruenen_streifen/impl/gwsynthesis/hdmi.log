@@ -1,0 +1,56 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'C:\Users\dihny192\Downloads\TangNano-9K\hdmi\src\gowin_clkdiv\gowin_clkdiv.v'
+Analyzing Verilog file 'C:\Users\dihny192\Downloads\TangNano-9K\hdmi\src\gowin_rpll\gowin_rpll.v'
+Analyzing Verilog file 'C:\Users\dihny192\Downloads\TangNano-9K\hdmi\src\gowin_rpll_test\gowin_rpll_test.v'
+Analyzing Verilog file 'C:\Users\dihny192\Downloads\TangNano-9K\hdmi\src\uart.v'
+Analyzing Verilog file 'C:\Users\dihny192\Downloads\TangNano-9K\hdmi\src\rgb_monitor.v'
+Analyzing Verilog file 'C:\Users\dihny192\Downloads\TangNano-9K\hdmi\src\debug_console.v'
+Analyzing Verilog file 'C:\Users\dihny192\Downloads\TangNano-9K\hdmi\src\test_pattern.v'
+Analyzing Verilog file 'C:\Users\dihny192\Downloads\TangNano-9K\hdmi\src\svo_tmds.v'
+Analyzing Verilog file 'C:\Users\dihny192\Downloads\TangNano-9K\hdmi\src\hdmi_tx.v'
+Analyzing Verilog file 'C:\Users\dihny192\Downloads\TangNano-9K\hdmi\src\rgb_line_converter.v'
+Analyzing Verilog file 'C:\Users\dihny192\Downloads\TangNano-9K\hdmi\src\top.v'
+Compiling module 'top'("C:\Users\dihny192\Downloads\TangNano-9K\hdmi\src\top.v":18)
+Compiling module 'rgb_monitor'("C:\Users\dihny192\Downloads\TangNano-9K\hdmi\src\rgb_monitor.v":14)
+Compiling module 'debug_console'("C:\Users\dihny192\Downloads\TangNano-9K\hdmi\src\debug_console.v":13)
+Compiling module 'uart_tx'("C:\Users\dihny192\Downloads\TangNano-9K\hdmi\src\uart.v":5)
+Compiling module 'uart_rx'("C:\Users\dihny192\Downloads\TangNano-9K\hdmi\src\uart.v":45)
+Compiling module 'Gowin_rPLL_test'("C:\Users\dihny192\Downloads\TangNano-9K\hdmi\src\gowin_rpll_test\gowin_rpll_test.v":7)
+Compiling module 'Gowin_rPLL'("C:\Users\dihny192\Downloads\TangNano-9K\hdmi\src\gowin_rpll\gowin_rpll.v":9)
+Compiling module 'Gowin_CLKDIV'("C:\Users\dihny192\Downloads\TangNano-9K\hdmi\src\gowin_clkdiv\gowin_clkdiv.v":9)
+Compiling module 'Reset_Sync'("C:\Users\dihny192\Downloads\TangNano-9K\hdmi\src\top.v":263)
+Compiling module 'rgb_line_converter'("C:\Users\dihny192\Downloads\TangNano-9K\hdmi\src\rgb_line_converter.v":16)
+Extracting RAM for identifier 'line_mem'("C:\Users\dihny192\Downloads\TangNano-9K\hdmi\src\rgb_line_converter.v":122)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 10("C:\Users\dihny192\Downloads\TangNano-9K\hdmi\src\rgb_line_converter.v":188)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 13("C:\Users\dihny192\Downloads\TangNano-9K\hdmi\src\rgb_line_converter.v":189)
+Compiling module 'test_pattern'("C:\Users\dihny192\Downloads\TangNano-9K\hdmi\src\test_pattern.v":9)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 13("C:\Users\dihny192\Downloads\TangNano-9K\hdmi\src\test_pattern.v":50)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 10("C:\Users\dihny192\Downloads\TangNano-9K\hdmi\src\test_pattern.v":51)
+Compiling module 'hdmi_tx'("C:\Users\dihny192\Downloads\TangNano-9K\hdmi\src\hdmi_tx.v":6)
+Compiling module 'svo_tmds'("C:\Users\dihny192\Downloads\TangNano-9K\hdmi\src\svo_tmds.v":22)
+NOTE  (EX0101) : Current top module is "top"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "C:\Users\dihny192\Downloads\TangNano-9K\hdmi\impl\gwsynthesis\hdmi.vg" completed
+WARN  (CK3000) : U_pll/rpll_inst's "CLKIN" pin has more than one clock on it,use clock "rgb_pclk" as master clock of "u_pll/rpll_inst/CLKOUT" pin
+WARN  (CK3000) : The clock "rgb_pclk"'s frequency does not match u_pll/rpll_inst's param "FCLKIN = "24""
+WARN  (CK3000) : U_pll/rpll_inst's "CLKIN" pin has more than one clock on it,use clock "rgb_pclk" as master clock of "u_pll/rpll_inst/CLKOUTP" pin
+WARN  (CK3000) : U_pll/rpll_inst's "CLKIN" pin has more than one clock on it,use clock "rgb_pclk" as master clock of "u_pll/rpll_inst/CLKOUTD" pin
+WARN  (CK3000) : U_pll/rpll_inst's "CLKIN" pin has more than one clock on it,use clock "rgb_pclk" as master clock of "u_pll/rpll_inst/CLKOUTD3" pin
+[100%] Generate report file "C:\Users\dihny192\Downloads\TangNano-9K\hdmi\impl\gwsynthesis\hdmi_syn.rpt.html" completed
+GowinSynthesis finish

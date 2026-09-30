@@ -1,0 +1,32 @@
+Reading netlist file: "C:\Users\dihny192\Downloads\TangNano-9K\hdmi\impl\gwsynthesis\hdmi.vg"
+Parsing netlist file "C:\Users\dihny192\Downloads\TangNano-9K\hdmi\impl\gwsynthesis\hdmi.vg" completed
+Processing netlist completed
+Reading constraint file: "C:\Users\dihny192\Downloads\TangNano-9K\hdmi\src\hdmi.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+WARN  (TA1121) : rpll_inst's "CLKIN" pin has more than one clock on it,use clock "rgb_pclk" as master clock of "u_pll/rpll_inst/CLKOUTP" pin
+WARN  (TA1121) : rpll_inst's "CLKIN" pin has more than one clock on it,use clock "rgb_pclk" as master clock of "u_pll/rpll_inst/CLKOUTD" pin
+WARN  (TA1121) : rpll_inst's "CLKIN" pin has more than one clock on it,use clock "rgb_pclk" as master clock of "u_pll/rpll_inst/CLKOUTD3" pin
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "C:\Users\dihny192\Downloads\TangNano-9K\hdmi\impl\pnr\hdmi.power.html" completed
+Generate file "C:\Users\dihny192\Downloads\TangNano-9K\hdmi\impl\pnr\hdmi.pin.html" completed
+Generate file "C:\Users\dihny192\Downloads\TangNano-9K\hdmi\impl\pnr\hdmi.rpt.html" completed
+Generate file "C:\Users\dihny192\Downloads\TangNano-9K\hdmi\impl\pnr\hdmi.rpt.txt" completed
+Generate file "C:\Users\dihny192\Downloads\TangNano-9K\hdmi\impl\pnr\hdmi.tr.html" completed
+Mon Sep 28 20:27:03 2026
+

@@ -1,0 +1,128 @@
+[
+ {
+  "InstFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/top.v",
+  "InstLine" : 18,
+  "InstName" : "top",
+  "ModuleFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/top.v",
+  "ModuleLine" : 18,
+  "ModuleName" : "top",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/top.v",
+    "InstLine" : 98,
+    "InstName" : "u_mon",
+    "ModuleFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/rgb_monitor.v",
+    "ModuleLine" : 14,
+    "ModuleName" : "rgb_monitor"
+   },
+   {
+    "InstFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/top.v",
+    "InstLine" : 120,
+    "InstName" : "u_console",
+    "ModuleFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/debug_console.v",
+    "ModuleLine" : 13,
+    "ModuleName" : "debug_console",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/debug_console.v",
+      "InstLine" : 51,
+      "InstName" : "u_tx",
+      "ModuleFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/uart.v",
+      "ModuleLine" : 5,
+      "ModuleName" : "uart_tx"
+     },
+     {
+      "InstFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/debug_console.v",
+      "InstLine" : 59,
+      "InstName" : "u_rx",
+      "ModuleFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/uart.v",
+      "ModuleLine" : 45,
+      "ModuleName" : "uart_rx"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/top.v",
+    "InstLine" : 155,
+    "InstName" : "u_pll_test",
+    "ModuleFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/gowin_rpll_test/gowin_rpll_test.v",
+    "ModuleLine" : 7,
+    "ModuleName" : "Gowin_rPLL_test"
+   },
+   {
+    "InstFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/top.v",
+    "InstLine" : 167,
+    "InstName" : "u_pll",
+    "ModuleFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/gowin_rpll/gowin_rpll.v",
+    "ModuleLine" : 9,
+    "ModuleName" : "Gowin_rPLL"
+   },
+   {
+    "InstFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/top.v",
+    "InstLine" : 173,
+    "InstName" : "u_div_5",
+    "ModuleFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/gowin_clkdiv/gowin_clkdiv.v",
+    "ModuleLine" : 9,
+    "ModuleName" : "Gowin_CLKDIV"
+   },
+   {
+    "InstFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/top.v",
+    "InstLine" : 181,
+    "InstName" : "u_reset_sync",
+    "ModuleFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/top.v",
+    "ModuleLine" : 263,
+    "ModuleName" : "Reset_Sync"
+   },
+   {
+    "InstFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/top.v",
+    "InstLine" : 202,
+    "InstName" : "u_conv",
+    "ModuleFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/rgb_line_converter.v",
+    "ModuleLine" : 16,
+    "ModuleName" : "rgb_line_converter"
+   },
+   {
+    "InstFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/top.v",
+    "InstLine" : 235,
+    "InstName" : "u_tp",
+    "ModuleFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/test_pattern.v",
+    "ModuleLine" : 9,
+    "ModuleName" : "test_pattern"
+   },
+   {
+    "InstFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/top.v",
+    "InstLine" : 247,
+    "InstName" : "u_hdmi",
+    "ModuleFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/hdmi_tx.v",
+    "ModuleLine" : 6,
+    "ModuleName" : "hdmi_tx",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/hdmi_tx.v",
+      "InstLine" : 24,
+      "InstName" : "u_tmds_b",
+      "ModuleFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/svo_tmds.v",
+      "ModuleLine" : 22,
+      "ModuleName" : "svo_tmds"
+     },
+     {
+      "InstFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/hdmi_tx.v",
+      "InstLine" : 33,
+      "InstName" : "u_tmds_g",
+      "ModuleFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/svo_tmds.v",
+      "ModuleLine" : 22,
+      "ModuleName" : "svo_tmds"
+     },
+     {
+      "InstFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/hdmi_tx.v",
+      "InstLine" : 42,
+      "InstName" : "u_tmds_r",
+      "ModuleFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/svo_tmds.v",
+      "ModuleLine" : 22,
+      "ModuleName" : "svo_tmds"
+     }
+    ]
+   }
+  ]
+ }
+]
