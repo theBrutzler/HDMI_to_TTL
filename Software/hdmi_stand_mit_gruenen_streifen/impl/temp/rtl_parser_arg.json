@@ -2,47 +2,47 @@
  "Device" : "GW1NR-9C",
  "Files" : [
   {
-   "Path" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/gowin_clkdiv/gowin_clkdiv.v",
+   "Path" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/gowin_clkdiv/gowin_clkdiv.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/gowin_rpll/gowin_rpll.v",
+   "Path" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/gowin_rpll/gowin_rpll.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/gowin_rpll_test/gowin_rpll_test.v",
+   "Path" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/gowin_rpll_test/gowin_rpll_test.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/uart.v",
+   "Path" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/uart.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/rgb_monitor.v",
+   "Path" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/rgb_monitor.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/debug_console.v",
+   "Path" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/debug_console.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/test_pattern.v",
+   "Path" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/test_pattern.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/svo_tmds.v",
+   "Path" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/svo_tmds.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/hdmi_tx.v",
+   "Path" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/hdmi_tx.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/rgb_line_converter.v",
+   "Path" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/rgb_line_converter.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/top.v",
+   "Path" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/top.v",
    "Type" : "verilog"
   }
  ],
@@ -50,7 +50,7 @@
 
  ],
  "LoopLimit" : 2000,
- "ResultFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/impl/temp/rtl_parser.result",
+ "ResultFile" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/impl/temp/rtl_parser.result",
  "Top" : "top",
  "VerilogStd" : "verilog_2001",
  "VhdlStd" : "vhdl_93"

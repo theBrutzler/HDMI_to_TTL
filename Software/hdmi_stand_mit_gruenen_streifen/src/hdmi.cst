@@ -86,7 +86,7 @@ IO_LOC "rgb_g[5]" 53;
 // IOR17B
 IO_LOC "rgb_g[6]" 51;
 // IOB41B
-IO_LOC "rgb_g[7]" 42;
+IO_LOC "rgb_g[7]" 32;//42;
 
 // blue
 // IOT10A

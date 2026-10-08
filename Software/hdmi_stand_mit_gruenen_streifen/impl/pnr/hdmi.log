@@ -1,7 +1,7 @@
-Reading netlist file: "C:\Users\dihny192\Downloads\TangNano-9K\hdmi\impl\gwsynthesis\hdmi.vg"
-Parsing netlist file "C:\Users\dihny192\Downloads\TangNano-9K\hdmi\impl\gwsynthesis\hdmi.vg" completed
+Reading netlist file: "C:\Users\Chris\Documents\GitHub\HDMI_to_TTL\Software\hdmi_stand_mit_gruenen_streifen\impl\gwsynthesis\hdmi.vg"
+Parsing netlist file "C:\Users\Chris\Documents\GitHub\HDMI_to_TTL\Software\hdmi_stand_mit_gruenen_streifen\impl\gwsynthesis\hdmi.vg" completed
 Processing netlist completed
-Reading constraint file: "C:\Users\dihny192\Downloads\TangNano-9K\hdmi\src\hdmi.cst"
+Reading constraint file: "C:\Users\Chris\Documents\GitHub\HDMI_to_TTL\Software\hdmi_stand_mit_gruenen_streifen\src\hdmi.cst"
 Physical Constraint parsed completed
 Running placement......
 [10%] Placement Phase 0 completed
@@ -23,10 +23,10 @@ Bitstream generation in progress......
 Bitstream generation completed
 Running power analysis......
 [100%] Power analysis completed
-Generate file "C:\Users\dihny192\Downloads\TangNano-9K\hdmi\impl\pnr\hdmi.power.html" completed
-Generate file "C:\Users\dihny192\Downloads\TangNano-9K\hdmi\impl\pnr\hdmi.pin.html" completed
-Generate file "C:\Users\dihny192\Downloads\TangNano-9K\hdmi\impl\pnr\hdmi.rpt.html" completed
-Generate file "C:\Users\dihny192\Downloads\TangNano-9K\hdmi\impl\pnr\hdmi.rpt.txt" completed
-Generate file "C:\Users\dihny192\Downloads\TangNano-9K\hdmi\impl\pnr\hdmi.tr.html" completed
-Mon Sep 28 20:27:03 2026
+Generate file "C:\Users\Chris\Documents\GitHub\HDMI_to_TTL\Software\hdmi_stand_mit_gruenen_streifen\impl\pnr\hdmi.power.html" completed
+Generate file "C:\Users\Chris\Documents\GitHub\HDMI_to_TTL\Software\hdmi_stand_mit_gruenen_streifen\impl\pnr\hdmi.pin.html" completed
+Generate file "C:\Users\Chris\Documents\GitHub\HDMI_to_TTL\Software\hdmi_stand_mit_gruenen_streifen\impl\pnr\hdmi.rpt.html" completed
+Generate file "C:\Users\Chris\Documents\GitHub\HDMI_to_TTL\Software\hdmi_stand_mit_gruenen_streifen\impl\pnr\hdmi.rpt.txt" completed
+Generate file "C:\Users\Chris\Documents\GitHub\HDMI_to_TTL\Software\hdmi_stand_mit_gruenen_streifen\impl\pnr\hdmi.tr.html" completed
+Thu Oct  1 23:41:45 2026
 

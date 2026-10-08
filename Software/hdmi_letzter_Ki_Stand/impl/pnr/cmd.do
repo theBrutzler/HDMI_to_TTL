@@ -1,9 +1,9 @@
--d C:\Users\dihny192\Downloads\TangNano-9K\hdmi\impl\gwsynthesis\hdmi.vg
+-d C:\Users\Chris\Documents\GitHub\HDMI_to_TTL\Software\hdmi_letzter_Ki_Stand\impl\gwsynthesis\hdmi.vg
 -p GW1NR-9C-QFN88P-6
 -pn GW1NR-LV9QN88PC6/I5
--cst C:\Users\dihny192\Downloads\TangNano-9K\hdmi\src\hdmi.cst
--cfg C:\Users\dihny192\Downloads\TangNano-9K\hdmi\impl\pnr\device.cfg
--sdc C:\Users\dihny192\Downloads\TangNano-9K\hdmi\src\hdmi.sdc
+-cst C:\Users\Chris\Documents\GitHub\HDMI_to_TTL\Software\hdmi_letzter_Ki_Stand\src\hdmi.cst
+-cfg C:\Users\Chris\Documents\GitHub\HDMI_to_TTL\Software\hdmi_letzter_Ki_Stand\impl\pnr\device.cfg
+-sdc C:\Users\Chris\Documents\GitHub\HDMI_to_TTL\Software\hdmi_letzter_Ki_Stand\src\hdmi.sdc
 -bit
 -tr
 -ph

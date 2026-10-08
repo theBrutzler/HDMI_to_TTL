@@ -1,123 +1,123 @@
 [
  {
-  "InstFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/top.v",
-  "InstLine" : 18,
+  "InstFile" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/top.v",
+  "InstLine" : 19,
   "InstName" : "top",
-  "ModuleFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/top.v",
-  "ModuleLine" : 18,
+  "ModuleFile" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/top.v",
+  "ModuleLine" : 19,
   "ModuleName" : "top",
   "SubInsts" : [
    {
-    "InstFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/top.v",
-    "InstLine" : 98,
+    "InstFile" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/top.v",
+    "InstLine" : 99,
     "InstName" : "u_mon",
-    "ModuleFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/rgb_monitor.v",
+    "ModuleFile" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/rgb_monitor.v",
     "ModuleLine" : 14,
     "ModuleName" : "rgb_monitor"
    },
    {
-    "InstFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/top.v",
-    "InstLine" : 120,
+    "InstFile" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/top.v",
+    "InstLine" : 121,
     "InstName" : "u_console",
-    "ModuleFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/debug_console.v",
+    "ModuleFile" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/debug_console.v",
     "ModuleLine" : 13,
     "ModuleName" : "debug_console",
     "SubInsts" : [
      {
-      "InstFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/debug_console.v",
+      "InstFile" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/debug_console.v",
       "InstLine" : 51,
       "InstName" : "u_tx",
-      "ModuleFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/uart.v",
+      "ModuleFile" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/uart.v",
       "ModuleLine" : 5,
       "ModuleName" : "uart_tx"
      },
      {
-      "InstFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/debug_console.v",
+      "InstFile" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/debug_console.v",
       "InstLine" : 59,
       "InstName" : "u_rx",
-      "ModuleFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/uart.v",
+      "ModuleFile" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/uart.v",
       "ModuleLine" : 45,
       "ModuleName" : "uart_rx"
      }
     ]
    },
    {
-    "InstFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/top.v",
-    "InstLine" : 155,
+    "InstFile" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/top.v",
+    "InstLine" : 156,
     "InstName" : "u_pll_test",
-    "ModuleFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/gowin_rpll_test/gowin_rpll_test.v",
+    "ModuleFile" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/gowin_rpll_test/gowin_rpll_test.v",
     "ModuleLine" : 7,
     "ModuleName" : "Gowin_rPLL_test"
    },
    {
-    "InstFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/top.v",
-    "InstLine" : 167,
+    "InstFile" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/top.v",
+    "InstLine" : 168,
     "InstName" : "u_pll",
-    "ModuleFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/gowin_rpll/gowin_rpll.v",
+    "ModuleFile" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/gowin_rpll/gowin_rpll.v",
     "ModuleLine" : 9,
     "ModuleName" : "Gowin_rPLL"
    },
    {
-    "InstFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/top.v",
-    "InstLine" : 173,
+    "InstFile" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/top.v",
+    "InstLine" : 174,
     "InstName" : "u_div_5",
-    "ModuleFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/gowin_clkdiv/gowin_clkdiv.v",
+    "ModuleFile" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/gowin_clkdiv/gowin_clkdiv.v",
     "ModuleLine" : 9,
     "ModuleName" : "Gowin_CLKDIV"
    },
    {
-    "InstFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/top.v",
-    "InstLine" : 181,
+    "InstFile" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/top.v",
+    "InstLine" : 182,
     "InstName" : "u_reset_sync",
-    "ModuleFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/top.v",
-    "ModuleLine" : 263,
+    "ModuleFile" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/top.v",
+    "ModuleLine" : 264,
     "ModuleName" : "Reset_Sync"
    },
    {
-    "InstFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/top.v",
-    "InstLine" : 202,
+    "InstFile" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/top.v",
+    "InstLine" : 203,
     "InstName" : "u_conv",
-    "ModuleFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/rgb_line_converter.v",
+    "ModuleFile" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/rgb_line_converter.v",
     "ModuleLine" : 16,
     "ModuleName" : "rgb_line_converter"
    },
    {
-    "InstFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/top.v",
-    "InstLine" : 235,
+    "InstFile" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/top.v",
+    "InstLine" : 236,
     "InstName" : "u_tp",
-    "ModuleFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/test_pattern.v",
+    "ModuleFile" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/test_pattern.v",
     "ModuleLine" : 9,
     "ModuleName" : "test_pattern"
    },
    {
-    "InstFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/top.v",
-    "InstLine" : 247,
+    "InstFile" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/top.v",
+    "InstLine" : 248,
     "InstName" : "u_hdmi",
-    "ModuleFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/hdmi_tx.v",
+    "ModuleFile" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/hdmi_tx.v",
     "ModuleLine" : 6,
     "ModuleName" : "hdmi_tx",
     "SubInsts" : [
      {
-      "InstFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/hdmi_tx.v",
+      "InstFile" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/hdmi_tx.v",
       "InstLine" : 24,
       "InstName" : "u_tmds_b",
-      "ModuleFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/svo_tmds.v",
+      "ModuleFile" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/svo_tmds.v",
       "ModuleLine" : 22,
       "ModuleName" : "svo_tmds"
      },
      {
-      "InstFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/hdmi_tx.v",
+      "InstFile" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/hdmi_tx.v",
       "InstLine" : 33,
       "InstName" : "u_tmds_g",
-      "ModuleFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/svo_tmds.v",
+      "ModuleFile" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/svo_tmds.v",
       "ModuleLine" : 22,
       "ModuleName" : "svo_tmds"
      },
      {
-      "InstFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/hdmi_tx.v",
+      "InstFile" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/hdmi_tx.v",
       "InstLine" : 42,
       "InstName" : "u_tmds_r",
-      "ModuleFile" : "C:/Users/dihny192/Downloads/TangNano-9K/hdmi/src/svo_tmds.v",
+      "ModuleFile" : "C:/Users/Chris/Documents/GitHub/HDMI_to_TTL/Software/hdmi_stand_mit_gruenen_streifen/src/svo_tmds.v",
       "ModuleLine" : 22,
       "ModuleName" : "svo_tmds"
      }
