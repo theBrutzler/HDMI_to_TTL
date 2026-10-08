@@ -12,6 +12,7 @@ Running routing......
 [60%] Routing Phase 0 completed
 [70%] Routing Phase 1 completed
 [80%] Routing Phase 2 completed
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'rgb_pclk_d' by the specified constraint. And then it may lead to the excessive delay or skew
 [90%] Routing Phase 3 completed
 Running timing analysis......
 [95%] Timing analysis completed
@@ -25,5 +26,5 @@ Generate file "C:\Users\Chris\Documents\GitHub\HDMI_to_TTL\Software\hdmi_letzter
 Generate file "C:\Users\Chris\Documents\GitHub\HDMI_to_TTL\Software\hdmi_letzter_Ki_Stand\impl\pnr\hdmi.rpt.html" completed
 Generate file "C:\Users\Chris\Documents\GitHub\HDMI_to_TTL\Software\hdmi_letzter_Ki_Stand\impl\pnr\hdmi.rpt.txt" completed
 Generate file "C:\Users\Chris\Documents\GitHub\HDMI_to_TTL\Software\hdmi_letzter_Ki_Stand\impl\pnr\hdmi.tr.html" completed
-Thu Oct  1 23:48:35 2026
+Fri Oct  9 01:08:47 2026
 
