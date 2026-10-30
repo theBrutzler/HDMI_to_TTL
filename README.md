@@ -1,6 +1,6 @@
 # HDMI_to_TTL
 
-HDMI-Ausgang für das Rigol DS1054Z: Das parallele 24-Bit-RGB-Signal (800 × 480), das vom Mainboard zum internen Display geht, wird abgegriffen und von einem **Tang Nano 9K** (Gowin GW1NR-9C) in ein HDMI-Signal umgewandelt.
+HDMI-Ausgang für das R1gol DS1054Z: Das parallele 24-Bit-RGB-Signal (800 × 480), das vom Mainboard zum internen Display geht, wird abgegriffen und von einem **Tang Nano 9K** (Gowin GW1NR-9C) in ein HDMI-Signal umgewandelt.
 
 Diese Anleitung beschreibt, wie die Platine bestückt und der FPGA programmiert wird.
 
