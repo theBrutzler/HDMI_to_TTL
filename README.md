@@ -4,6 +4,8 @@ HDMI-Ausgang für das Rigol DS1054Z: Das parallele 24-Bit-RGB-Signal (800 × 480
 
 Diese Anleitung beschreibt, wie die Platine bestückt und der FPGA programmiert wird.
 
+> ⚠️ **Haftungsausschluss:** Nachbau, Programmierung und Einbau erfolgen **auf eigene Gefahr**. Für das Öffnen des Oszilloskops wird ein Eingriff in das Gerät nötig, der zum Verlust der Garantie führen kann. Für Schäden am Oszilloskop, am Tang Nano 9K, an angeschlossenen Geräten oder sonstige Folgeschäden wird **keine Haftung übernommen**.
+
 ---
 
 ## Inhalt
@@ -140,6 +142,8 @@ In der Liste steht jetzt als Operation `embFlash Erase,Program` und als FS File 
 ## 6. Anschluss und Inbetriebnahme
 
 > 📷 Bilder vom Einbau folgen, sobald die finale Platine da ist.
+
+> ⚠️ Der Einbau erfolgt **auf eigene Gefahr**, es wird **keine Haftung** übernommen. Vor dem Öffnen das Oszilloskop ausschalten und vom Netz trennen.
 
 Voraussetzung: Der Tang Nano 9K ist fertig programmiert (siehe [Abschnitt 5](#5-fpga-programmieren)) und das USB-C-Kabel ist abgezogen.
 
