@@ -15,7 +15,7 @@ Diese Anleitung beschreibt, wie die Platine bestückt und der FPGA programmiert 
 3. [Platine trennen](#3-platine-trennen)
 4. [Tang Nano 9K bestücken](#4-tang-nano-9k-bestücken)
 5. [FPGA programmieren](#5-fpga-programmieren)
-6. [Anschluss und Inbetriebnahme](#6-anschluss-und-inbetriebnahme)
+6. [Einbau ins Oszilloskop](#6-einbau-ins-oszilloskop)
 7. [Fehlersuche (LEDs und UART)](#7-fehlersuche-leds-und-uart)
 
 ---
@@ -27,7 +27,10 @@ Diese Anleitung beschreibt, wie die Platine bestückt und der FPGA programmiert 
 | Platine `TTL_to_HDMI` | Display-Teil und FPGA-Teil hängen als ein Nutzen zusammen |
 | Tang Nano 9K | Sipeed, FPGA GW1NR-LV9QN88PC6/I5 |
 | 2 × Stiftleiste 1 × 24, Raster 2,54 mm | für den Tang Nano 9K (liegen dem Board meist bei) |
+| Buchsenleiste 1 × 2, Raster 2,54 mm | J1, holt die 5 V von der Stiftleiste des Mainboards |
 | FFC-Kabel 35-polig, Raster 0,5 mm | verbindet Display-Teil (J5) und FPGA-Teil (J3) |
+| HDMI-Einbau-Verlängerung mit 90°-Winkelstecker | Buchse zum Festschrauben im Gehäuse, Stecker in den Tang Nano 9K (siehe [Abschnitt 6.3](#63-hdmi-buchse-im-gehäuse)) |
+| Isolierband | zum Fixieren des FPGA-Teils auf dem Mainboard |
 | USB-C-Kabel | **nur** zum Programmieren, solange das Board noch nicht eingebaut ist |
 | PC mit **Gowin EDA / Gowin Programmer** | getestet mit Version V1.9.11.03 Education |
 
@@ -41,11 +44,11 @@ Die Platine wird als ein Stück geliefert. Links sitzt der FPGA-Teil, rechts der
 
 **Oberseite** – mit QR-Code, FFC-Steckern und den SMD-Bauteilen:
 
-![Platine Oberseite](3D_Pictures/Ordering_1.png)
+![Platine Oberseite](Pictures/Ordering_1.png)
 
 **Unterseite** – hier ist die Umrisslinie des Tang Nano 9K inklusive Lage der HDMI-Buchse aufgedruckt:
 
-![Platine Unterseite](3D_Pictures/Ordering_2.png)
+![Platine Unterseite](Pictures/Ordering_2.png)
 
 ---
 
@@ -55,11 +58,11 @@ Die beiden Teile an der Sollbruchstelle vorsichtig auseinanderbrechen und die Br
 
 **Display-Teil** – kommt ins Oszilloskop zwischen Mainboard und Display. U1/U2 sind die 50-poligen Display-Stecker, J5 ist der 35-polige Anschluss zum FPGA-Teil:
 
-![Display-Teil](3D_Pictures/Break_DISPLAY.png)
+![Display-Teil](Pictures/Break_DISPLAY.png)
 
 **FPGA-Teil** – Oberseite mit J3 (35-polig, zum Display-Teil) und J1 (+5 V / GND):
 
-![FPGA-Teil Oberseite](3D_Pictures/Break_FPGA_2.png)
+![FPGA-Teil Oberseite](Pictures/Break_FPGA_2.png)
 
 ---
 
@@ -77,13 +80,24 @@ Der Tang Nano 9K wird auf der **Unterseite** des FPGA-Teils montiert, also auf d
 
 So sieht das bestückte FPGA-Teil aus (Unterseite, noch vor dem Trennen):
 
-![Tang Nano 9K auf der Platine](3D_Pictures/Populate_FPGA.png)
+![Tang Nano 9K auf der Platine](Pictures/Populate_FPGA.png)
 
 Und nach dem Trennen:
 
-![Bestücktes FPGA-Teil](3D_Pictures/Break_FPGA_1.png)
+![Bestücktes FPGA-Teil](Pictures/Break_FPGA_1.png)
 
-> **Hinweis:** J2 ist nur ein Dummy-Footprint und muss nicht bestückt werden.
+6. Die Buchsenleiste **J1** (1 × 2, +5 V / GND) auf derselben Seite wie den Tang Nano 9K einlöten, also auf der Unterseite. Sie wird beim Einbau auf die Stiftleiste des Mainboards gesteckt (siehe [Abschnitt 6.2](#62-fpga-teil-auf-dem-mainboard-befestigen)).
+
+> **Hinweis:** J2 („ONLY DUMMY“, 2 × 9) wird **nicht** bestückt. Die Löcher dienen nur als Freiraum für die übrigen Pins der Mainboard-Stiftleiste.
+
+Belegung von J1 (auch auf dem Bestückungsdruck markiert):
+
+| J1 Pin | Signal |
+|---|---|
+| 1 (eckiges Pad) | GND |
+| 2 | +5 V |
+
+![Belegung J1 und J2](Pictures/J1_J2_Pinout.png)
 
 ---
 
@@ -139,18 +153,61 @@ In der Liste steht jetzt als Operation `embFlash Erase,Program` und als FS File 
 
 ---
 
-## 6. Anschluss und Inbetriebnahme
-
-> 📷 Bilder vom Einbau folgen, sobald die finale Platine da ist.
+## 6. Einbau ins Oszilloskop
 
 > ⚠️ Der Einbau erfolgt **auf eigene Gefahr**, es wird **keine Haftung** übernommen. Vor dem Öffnen das Oszilloskop ausschalten und vom Netz trennen.
 
 Voraussetzung: Der Tang Nano 9K ist fertig programmiert (siehe [Abschnitt 5](#5-fpga-programmieren)) und das USB-C-Kabel ist abgezogen.
 
-1. Display-Teil im Oszilloskop zwischen Mainboard und Display einsetzen (Display-Flachbandkabel an U1/U2).
-2. Display-Teil (J5) und FPGA-Teil (J3) mit dem 35-poligen FFC-Kabel verbinden.
-3. J1 (**+5 V / GND**) mit der 5-V-Versorgung des Oszilloskops verbinden. Darüber wird das FPGA-Teil versorgt.
-4. Monitor an die HDMI-Buchse des Tang Nano 9K anschließen.
+### 6.1 Display-Teil einsetzen
+
+Das Display-Teil wird zwischen Display und Gehäuse gelegt und in das vorhandene Display-Flachbandkabel eingeschleift:
+
+1. Das originale Display-Flachbandkabel vom Display abziehen.
+2. Das vom **Mainboard** kommende Flachbandkabel in den oberen 50-poligen Stecker („To Mainboard“) stecken.
+3. Den mittleren 50-poligen Stecker („To Display“) mit dem Display verbinden.
+4. Das 35-polige FFC-Kabel in den unteren Stecker J5 („To FPGA“) stecken und zum FPGA-Teil führen.
+
+![Lage des Display-Teils](Pictures/DISPLAY_PCB.png)
+
+### 6.2 FPGA-Teil auf dem Mainboard befestigen
+
+Das FPGA-Teil liegt auf dem Mainboard, mit der QR-Code-Seite nach oben (der Tang Nano 9K zeigt also zum Mainboard), und wird mit Isolierband fixiert.
+
+1. Das andere Ende des 35-poligen FFC-Kabels in J3 des FPGA-Teils stecken.
+2. Das FPGA-Teil an der gezeigten Stelle auf das Mainboard legen und dabei auf die Stiftleiste des Mainboards neben dem Summer stecken (roter Kreis im Bild unten). Die Stiftleiste liegt dann unter J2 und J1 zusammen: Die Löcher von J2 nehmen die übrigen Pins auf, die Buchsenleiste **J1** greift die beiden Pins für **GND** (J1 Pin 1) und **+5 V** (J1 Pin 2) ab. Darüber wird das FPGA-Teil mit 5 V aus dem Oszilloskop versorgt.
+
+   > Vor dem ersten Einschalten mit einem Multimeter prüfen, ob die Platine richtig und nicht versetzt aufgesteckt ist und an J1 tatsächlich +5 V gegen GND anliegen.
+3. Darauf achten, dass die gekürzten Pins und die Bauteile des Tang Nano 9K keinen Kontakt zu Bauteilen oder Leiterbahnen des Mainboards haben.
+4. Das FPGA-Teil mit Isolierband auf dem Mainboard fixieren.
+
+![5-V-Abgriff an der Stiftleiste des Mainboards](Pictures/Eingebaut_5V.png)
+
+![Lage des FPGA-Teils – 3D-Ansicht](Pictures/Eingebaut_1.png)
+
+![Lage des FPGA-Teils – Draufsicht](Pictures/Eingebaut_2.png)
+
+So sieht es eingebaut aus. Links und rechts hält Isolierband die Platine, unten kommt das FFC-Kabel vom Display-Teil, rechts geht das HDMI-Kabel ab:
+
+![FPGA-Teil eingebaut](Pictures/Eingebaut.jpg)
+
+### 6.3 HDMI-Buchse im Gehäuse
+
+Damit das HDMI-Signal nach außen kommt, wird eine kurze HDMI-Einbau-Verlängerung verwendet: Auf der einen Seite ist ein 90°-Winkelstecker, auf der anderen eine Buchse mit zwei Schraublaschen.
+
+![HDMI-Einbau-Verlängerung](Pictures/HDMI_example.png)
+
+1. Den Winkelstecker in die HDMI-Buchse des Tang Nano 9K stecken.
+2. Die Position der Buchse in der Gehäuserückwand anzeichnen (oberhalb von USB-B und LAN), Ausschnitt und zwei Bohrungen für die Schrauben anfertigen.
+3. Die Buchse von innen einsetzen und festschrauben.
+4. Gehäuse wieder schließen.
+
+![HDMI-Buchse in der Gehäuserückwand](Pictures/Output.jpg)
+
+### 6.4 Inbetriebnahme
+
+1. Monitor an die neue HDMI-Buchse anschließen.
+2. Oszilloskop einschalten – das Bild erscheint parallel auf dem internen Display und auf dem Monitor.
 
 > ⚠️ **Keine Versorgung über USB-C!** Im eingebauten Zustand darf am Tang Nano 9K **kein USB-C-Kabel** angeschlossen werden. Die 5 V kommen ausschließlich aus dem Oszilloskop über J1. Ein zusätzlich angeschlossenes USB-Kabel würde zwei 5-V-Quellen gegeneinander schalten und kann Oszilloskop, Tang Nano 9K oder den PC beschädigen.
 
@@ -175,7 +232,7 @@ Der FPGA erzeugt den HDMI-Takt selbst aus dem 27-MHz-Oszillator des Tang Nano 9K
 
 Über den USB-Anschluss des Tang Nano 9K steht eine serielle Konsole zur Verfügung (**115200 Baud, 8N1**). Sie gibt jede Sekunde eine Statuszeile mit den gemessenen Eingangssignalen aus.
 
-> ⚠️ Die Konsole nur **außerhalb des Oszilloskops** nutzen (Board nur über USB versorgt, nicht mit dem Oszilloskop verbunden) – siehe Warnung in [Abschnitt 6](#6-anschluss-und-inbetriebnahme).
+> ⚠️ Die Konsole nur **außerhalb des Oszilloskops** nutzen (Board nur über USB versorgt, nicht mit dem Oszilloskop verbunden) – siehe Warnung in [Abschnitt 6](#6-einbau-ins-oszilloskop).
 
 | Befehl | Funktion |
 |---|---|
