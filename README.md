@@ -31,7 +31,7 @@ Diese Anleitung beschreibt, wie die Platine bestückt und der FPGA programmiert 
 | FFC-Kabel 50-polig, Raster 0,5 mm | verbindet Mainboard und Display-Teil („To Mainboard“) |
 | FFC-Kabel 35-polig, Raster 0,5 mm | verbindet Display-Teil (J5) und FPGA-Teil (J3) |
 | HDMI-Einbau-Verlängerung mit 90°-Winkelstecker | Buchse zum Festschrauben im Gehäuse, Stecker in den Tang Nano 9K (siehe [Abschnitt 6.3](#63-hdmi-buchse-im-gehäuse)) |
-| Isolierband | zum Fixieren des FPGA-Teils auf dem Mainboard |
+| Isolierband und/oder Kapton-Band | zum Fixieren des FPGA-Teils auf dem Mainboard und zum Isolieren des Display-Teils gegen das Metallgehäuse |
 | USB-C-Kabel | **nur** zum Programmieren, solange das Board noch nicht eingebaut ist |
 | PC mit **Gowin EDA / Gowin Programmer** | getestet mit Version V1.9.11.03 Education |
 
@@ -162,12 +162,15 @@ Voraussetzung: Der Tang Nano 9K ist fertig programmiert (siehe [Abschnitt 5](#5-
 
 ### 6.1 Display-Teil einsetzen
 
-Das Display-Teil wird zwischen Display und Gehäuse gelegt und in das vorhandene Display-Flachbandkabel eingeschleift:
+Das Display-Teil wird zwischen Display und **Metallgehäuse** gelegt und in die Verbindung zwischen Mainboard und Display eingeschleift.
+
+> ⚠️ Die Seite des Display-Teils, die zum Metallgehäuse zeigt, mit Isolierband oder Kapton-Band abkleben, damit Lötstellen und Bauteile keinen Kurzschluss zum Gehäuse bekommen.
 
 1. Das originale Display-Flachbandkabel vom Display abziehen.
 2. Das neue **50-polige FFC-Kabel** (Raster 0,5 mm) in den Display-Stecker des **Mainboards** und in den oberen 50-poligen Stecker des Display-Teils („To Mainboard“) stecken.
 3. Das Kabel des Displays in den mittleren 50-poligen Stecker („To Display“) stecken.
 4. Das 35-polige FFC-Kabel in den unteren Stecker J5 („To FPGA“) stecken und zum FPGA-Teil führen.
+5. Das Display-Teil (Seite zum Metall isoliert) zwischen Display und Metallgehäuse einlegen.
 
 ![Lage des Display-Teils](Pictures/DISPLAY_PCB.png)
 
